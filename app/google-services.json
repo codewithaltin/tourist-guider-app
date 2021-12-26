@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "426562331760",
+    "firebase_url": "https://travelapp-92ab0-default-rtdb.firebaseio.com",
+    "project_id": "travelapp-92ab0",
+    "storage_bucket": "travelapp-92ab0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426562331760:android:8055d6363e35f2a3c1c0b5",
+        "android_client_info": {
+          "package_name": "com.example.tourismapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "426562331760-sc5j7e1j54gusupbd2ptf20igingk3mo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdoGb5Z8m0nbYgDz2KEoqAL7MxV2nzzkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "426562331760-sc5j7e1j54gusupbd2ptf20igingk3mo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426562331760:android:6fa90fcc39e9c227c1c0b5",
+        "android_client_info": {
+          "package_name": "com.example.touristapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "426562331760-sc5j7e1j54gusupbd2ptf20igingk3mo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdoGb5Z8m0nbYgDz2KEoqAL7MxV2nzzkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "426562331760-sc5j7e1j54gusupbd2ptf20igingk3mo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426562331760:android:50a513e5fdfcf10cc1c0b5",
+        "android_client_info": {
+          "package_name": "com.example.touristguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "426562331760-sc5j7e1j54gusupbd2ptf20igingk3mo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdoGb5Z8m0nbYgDz2KEoqAL7MxV2nzzkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "426562331760-sc5j7e1j54gusupbd2ptf20igingk3mo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:outlineAmbientShadowColor="#01A7FF"
+    tools:context=".MainActivity">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="395dp"
+        android:layout_height="183dp"
+        android:layout_marginBottom="320dp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/googleMapButton"
+        android:layout_width="103dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="272dp"
+        android:drawableLeft="@drawable/ic_baseline_map_24"
+        android:gravity="center"
+        android:onClick="openMap"
+        android:text="location"
+        android:textColor="#FFFFFF"
+        android:textSize="9sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/welcomerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:onClick="openWelcomer"
+        android:text="Welcome Altin"
+        android:textColor="#01A7FF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/localHotelsButton"
+        android:layout_width="104dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="272dp"
+        android:drawableLeft="@drawable/ic_baseline_local_hotel_24"
+        android:gravity="center"
+        android:onClick="openLocalHotels"
+        android:text="local hotels"
+        android:textColor="#FFFFFF"
+        android:textSize="9sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.309"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/commentsButton"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="272dp"
+        android:drawableLeft="@drawable/ic_baseline_comment_24"
+        android:gravity="center"
+        android:onClick="openComments"
+        android:text="Comments"
+        android:textColor="#FFFFFF"
+        android:textSize="9sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/logInButton"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/logInButton"
+        android:layout_width="95dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="272dp"
+        android:drawableLeft="@drawable/ic_baseline_login_24"
+        android:gravity="center"
+        android:onClick="logInButton"
+        android:text="Log in"
+        android:textColor="#FFFFFF"
+        android:textSize="9sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="@+id/localHotelsButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Pitch:"
+        android:textColor="#01A7FF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/seek_bar_speed"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toEndOf="@+id/seek_bar_pitch"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager" />
+
+    <SeekBar
+        android:id="@+id/seek_bar_pitch"
+        android:layout_width="114dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="24dp"
+        android:background="#01A7FF"
+        android:outlineAmbientShadowColor="#01A7FF"
+        android:progress="50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Speed:"
+        android:textColor="#01A7FF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/seek_bar_pitch"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager" />
+
+    <SeekBar
+        android:id="@+id/seek_bar_speed"
+        android:layout_width="113dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="24dp"
+        android:background="#01A7FF"
+        android:outlineAmbientShadowColor="#01A7FF"
+        android:progress="50"
+        app:layout_constraintEnd_toStartOf="@+id/button_speak"
+        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintStart_toEndOf="@+id/seek_bar_pitch"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="410dp"
+        android:layout_height="260dp"
+        android:background="#01A7FF"
+        android:scrollbarSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.994">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="A short introduction"
+                android:textColor="#01A7FF"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/aboutText"
+                android:layout_width="match_parent"
+                android:layout_height="213dp"
+                android:background="#fff"
+                android:fontFamily="sans-serif-medium"
+                android:lineSpacingExtra="4sp"
+                android:text="Prokletije also known as the Albanian Alps as well as the Accursed Mountains is a mountain group on the western Balkan peninsula. As a subrange of the 1,000-kilometre-long Dinaric Alps range, Prokletije extends from northern Albania to Kosovo, eastern Montenegro and southernmost Serbia. Its peak in Albania, Maja Jezercë standing at 2,694 m (8,839 ft) is the highest point and the fifth highest peak in Albania, meanwhile it is the highest in the Dinarides. "
+                android:textColor="#01A7FF"
+                android:textSize="19sp"
+                app:cornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewPager"
+                app:layout_constraintVertical_bias="0.576" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_speak"
+        android:layout_width="38dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/ic_baseline_volume_up_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enjoy the view of Albanian Alps"
+        android:textColor="#01A7FF"
+        app:layout_constraintBottom_toTopOf="@+id/viewPager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomerText"
+        app:layout_constraintVertical_bias="0.577" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
